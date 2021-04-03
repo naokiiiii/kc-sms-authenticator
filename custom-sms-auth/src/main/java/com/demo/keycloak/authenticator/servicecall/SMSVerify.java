@@ -116,7 +116,7 @@ public class SMSVerify {
 		if (responce.getStatusLine().getStatusCode() >= 200
 				&& responce.getStatusLine().getStatusCode() <= 299 ) {
 			logger.infov("verifySMS result : {0}", result.getJsonString());
-			if (result.getStatus().equals("approved") && result.getValid().equals("true") ) {
+			if (result.getStatus().equals("approved") && result.getValid() == true ) {
 				logger.infov("verifySMS end : {0}", telNum);
 				return true;
 			} else {

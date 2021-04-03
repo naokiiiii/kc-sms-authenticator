@@ -86,6 +86,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -123,5 +124,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
 </project>
